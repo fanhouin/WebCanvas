@@ -1,0 +1,115 @@
+html,body{
+    font-family: 'Exo 2','Noto Sans TC', sans-serif;
+    font-size:16px;
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
+
+    background-image: url('image/background1.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+}
+
+#con{
+    height:100%;
+    display: flex;
+}
+
+#drawcon{
+    width:80%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: space-around;
+    text-align:center;
+}
+
+
+#draw{
+    background-color:white;
+    box-shadow:  10px 10px 40px  rgba(0, 0, 0, 0.842);
+    border-radius: 10px;
+    cursor: url("image/pen.png") 5 15,auto;
+}
+
+#contralwin{ 
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: space-between;
+    text-align:center;
+
+    background-image: url('image/selectcon.png');
+    background-size: 100% 100%;
+    background-color:rgba(255, 255, 255, 0);
+    width:20%;
+}
+
+#range-color-con{
+    text-align: center;
+}
+
+
+#color{
+    width: 5rem;
+    height: 5rem;
+    margin: 1.5rem 1rem;
+    background-color:black;
+}
+
+#selecttype-con{
+    text-align:center;
+}
+
+#selecttype{
+    padding:0.5rem 0.5rem;
+    color: rgb(0, 0, 0);
+    /* border: 5px inset rgb(0, 0, 0); */
+    width: 4rem;
+    display:inline-block;
+    font-size:3rem;
+    transition: .2s;
+}
+
+#textbox{
+    background-color:rgba(255, 255, 255, 0);
+    border:2px dotted rgb(0, 0, 0);
+    position: absolute;
+    display: none;
+}
+
+#selecttype:hover{
+    opacity: 0.6;
+}
+
+select{
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    width: 6rem;
+    border-radius: 10px;
+    margin:10px 0px;
+}
+
+.typeborder{
+    background-image: url('image/select.png');
+    background-size: 100% 100%;
+    color : rgb(88, 0, 105) !important;
+}
+
+
+#upload{
+    opacity: 0;
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+#rangenum{
+    font-size:1.5rem;
+}
+
+

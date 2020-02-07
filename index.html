@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web canvas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!--my css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+</head>
+
+<body>
+    <div id='con'>
+        <div id='drawcon'>
+            <div style="font-family:Microsoft JhengHei; font-size:3rem; font-weight:900 ">提筆書畫，孜孜不息。</div>
+            <div><input type="text" id='textbox' value='' /><canvas id='draw' width='1000px' height='600px'><canvas>
+            </div>
+            <div></div>
+        </div>
+
+        <div id='contralwin'>
+            <div></div>
+            <div id='contralwin-center'>
+                <div id='range-color-con'>
+                    <input id='color' type="color" value="#B22222" />
+                    <br>
+                    <div id='rangenum'></div>
+                    <input id='range' type="range" min="0" max="50" step="1" value="20">
+                    <br>
+                    <select id='fontfam'>
+                        <option id='op1' value="Arial" style='font-family:Arial'>Arial</option>
+                        <option id='op1' value="Times" style='font-family:Times'>Times</option>
+                        <option id='op1' value="fantasy" style='font-family:fantasy'>fantasy</option>
+                        <option id='op1' value="DFKai-sb" style='font-family:DFKai-sb'>標楷體</option>
+                        <option id='op1' value="Microsoft JhengHei" style='font-family:Microsoft JhengHei'>微軟正黑體
+                        </option>
+                    </select>
+                    <select id='fontsize'>
+                        <option id='op2' value="10">10px</option>
+                        <option id='op2' value="20" selected="selected">20px</option>
+                        <option id='op2' value="30">30px</option>
+                        <option id='op2' value="40">40px</option>
+                        <option id='op2' value="50">50px</option>
+                    </select>
+                </div>
+                <div id='selecttype-con'>
+                    <div id='selecttype' type='pen' class='typeborder'><i class="fas fa-pencil-alt"></i></div>
+                    <div id='selecttype' type='rubber'><i class="fas fa-eraser"></i></div>
+                    <br>
+
+                    <div id='selecttype' type='square'><i class="far fa-square"></i></div>
+                    <div id='selecttype' type='triangle'><i class="fas fa-campground"></i></i></div>
+                    <br>
+
+                    <div id='selecttype' type="circle"><i class="far fa-circle"></i></div>
+                    <div id='selecttype' type="line"><i class="fas fa-slash"></i></div>
+                    <br>
+
+                    <div id='selecttype' type="text"><i class="fas fa-font"></i></div>
+                    <div id='selecttype' type="clear"><i class="fas fa-broom"></i></div>
+                    <br>
+
+                    <div id='selecttype' type='undo'><i class="fas fa-undo"></i></div>
+                    <div id='selecttype' type='redo'><i class="fas fa-redo"></i></div>
+                    <br>
+
+                    <div id='selecttype' type='upload'><input id='upload' type="file" /><i
+                            class="fas fa-file-upload"></i></div>
+                    <a id='download' download='image.jpg' href='' onclick="this.href=draw.toDataURL();">
+                        <div id='selecttype' type='download'><i class="fas fa-file-download"></i></div>
+                    </a>
+
+                </div>
+            </div>
+            <div></div>
+        </div>
+        
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
